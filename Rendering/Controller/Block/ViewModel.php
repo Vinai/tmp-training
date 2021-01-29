@@ -1,11 +1,11 @@
 <?php
 
-namespace Training\Rendering\Controller\Customer;
+namespace Training\Rendering\Controller\Block;
 
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\View\Result\PageFactory;
 
-class Bonuses implements ActionInterface
+class ViewModel implements ActionInterface
 {
     private $pageFactory;
 
@@ -16,9 +16,7 @@ class Bonuses implements ActionInterface
 
     public function execute()
     {
-        $page = $this->pageFactory->create();
-        $page->getConfig()->getTitle()->prepend('My Bonuses');
-
-        return $page;
+        return $this->pageFactory->create();
     }
 }
+

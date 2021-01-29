@@ -1,0 +1,15 @@
+<?php
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Training\Rendering\ViewModel\ExampleViewModel $viewModel */
+
+$viewModel = $block->getViewModel(); // same effect as below
+$viewModel = $block->getData('view_model'); // same effect as above but better for static code analysis
+
+?>
+<ul>
+<?php foreach ($viewModel->getExampleData() as $c): ?>
+    <li><?= $escaper->escapeHtml($c) ?></li>
+<?php endforeach; ?>
+</ul>

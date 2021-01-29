@@ -7,7 +7,7 @@
                 <arguments>
                     <argument name="path" xsi:type="string">training_rendering/customer/bonuses</argument>
                     <argument name="label" xsi:type="string" translate="true">My Bonuses</argument>
-                    <argument name="sortOrder" xsi:type="number">218</argument>
+                    <argument name="sortOrder" xsi:type="number">231</argument>
                 </arguments>
             </block>
         </referenceBlock>
