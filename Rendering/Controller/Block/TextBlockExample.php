@@ -22,7 +22,7 @@ class TextBlockExample implements ActionInterface
     {
         /** @var TextBlock $block */
         $block = $this->layout->createBlock(TextBlock::class);
-        $block->setText('This is the output of the text block now.');
+        $block->setText('This is the new output of the text block now.');
         $output = $block->toHtml();
 
         $rawResult = $this->rawFactory->create();
