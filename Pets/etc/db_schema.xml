@@ -7,7 +7,7 @@
         <column xsi:type="varchar" name="pet_type" length="100" nullable="false" default="Cat"/>
         <column xsi:type="timestamp" name="created_at" on_update="false" default="CURRENT_TIMESTAMP"/>
         <column xsi:type="timestamp" name="updated_at" on_update="true" default="CURRENT_TIMESTAMP"/>
-        <constraint xsi:type="primary" referenceId="PRIMARY">
+                <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="pet_id"/>
         </constraint>
         <constraint xsi:type="foreign" referenceId="TRAINING_PETS_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID"
