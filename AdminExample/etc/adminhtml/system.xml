@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="training" translate="label" sortOrder="500">
+            <label>Training</label>
+        </tab>
+        <section id="training" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Training</label>
+            <tab>training</tab>
+            <resource>Training_AdminExample::resource</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="test" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Test Boolean Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="image_file" type="image" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Image</label>
+                    <backend_model>Training\AdminExample\Model\Config\Backend\Jpeg</backend_model>
+                    <upload_dir config="system/filesystem/media" scope_info="1">training/image</upload_dir>
+                    <base_url type="media" scope_info="1">training/image</base_url>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

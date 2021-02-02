@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Training_AdminExample::menu_id" parent="Magento_Sales::sales_operation" 
+            title="Admin Example" module="Training_AdminExample" sortOrder="75" action="training_adminexample/admin/page" resource="Training_AdminExample::resource"/>
+    </menu>
+</config>
