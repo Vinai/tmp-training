@@ -20,8 +20,7 @@ class RenameCustomer implements ActionInterface
         \Magento\Customer\Api\CustomerRepositoryInterface $customerRepository,
         \Magento\Framework\Controller\Result\JsonFactory $jsonFactory,
         \Magento\Framework\Reflection\DataObjectProcessor $dataObjectProcessor
-    )
-    {
+    ) {
         $this->request = $request;
         $this->customerRepository = $customerRepository;
         $this->jsonFactory = $jsonFactory;
