@@ -1,10 +1,25 @@
 <?php
 
 /** @var Magento\Framework\View\Element\Template $block */
-/** @var \Magento\Framework\Escaper $escaper */
+/** @var Magento\Framework\Escaper $escaper */
+
+/** @var Training\AdminExample\ViewModel\TrainingConfigViewModel $configValue */
+$configValue = $block->getData('config_data');
 
 ?>
-!!!
-<div class="template">
-    <?= __('Hello. World!') ?>
+
+<div>
+    <?= __('Test Boolean is: %1', $configValue->getTestValue() ? 'On' : 'Off') ?>
+</div>
+
+<div>
+    <?= __('The uploaded image is: %1', $configValue->getUploadedImagePath()) ?>
+</div>
+
+<div>
+    <?= __('The uploaded image is: %1', $configValue->getUploadedImageUrl()) ?>
+</div>
+
+<div>
+    <?= __('The password is: %1', $configValue->getPasswordValue()) ?>
 </div>
